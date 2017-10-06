@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "process_type": 10,
+      "group_name": "mesosphere.marathon.Main",
+      "processes": [
+        {
+          "process_name": "java",
+          "properties": {
+            "ListeningPorts": "8080"
+          }
+        }
+      ]
+    }
+  ]
+}
