@@ -1,2 +1,3 @@
-__pychache__/
+__pycache__/
 mesos_plugin.egg-info/
+custom.python.mesos_plugin/
