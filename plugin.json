@@ -1,6 +1,6 @@
 {
   "name": "custom.python.mesos_plugin",
-  "version": "1.0",
+  "version": "1.1",
   "type": "python",
   "entity": "PROCESS_GROUP_INSTANCE",
   "processTypeNames": ["JAVA"],
@@ -251,6 +251,11 @@
 			"key": "slaves_connected",
 			"aggregation": "sum",
 			"displayname": "Slaves Connected"
+		},
+		{
+			"key": "slaves_active",
+			"aggregation": "sum",
+			"displayname": "Slaves Inactive"
 		}
 	],
 	"keycharts": [
