@@ -89,7 +89,7 @@
       "timeseries": {
         "key": "disk_total",
         "unit": "MegaByte",
-		"displayname": "Master Memory Percent"
+		"displayname": "Master Disk Total"
       }
     },
 	{
