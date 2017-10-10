@@ -375,5 +375,47 @@
 		}
 	],
 	"charts": []
-  }
+  },
+  "configUI": {
+	"displayname": "Mesos Plugin",
+	"properties": [
+		{"key" : "user", "displayName": "Username", "displayOrder" : 1, "displayHint": "Username" },
+		{"key" : "password", "displayName": "Password", "displayOrder": 2, "displayHint": "Password"},
+		{"key" : "domain", "displayName": "Domain", "displayOrder": 3, "displayHint": "Mesos Domain"},
+		{"key" : "port", "displayName": "Port", "displayOrder": 4, "displayHint": "Port"},
+		{"key" : "uri", "displayName": "Uri", "displayOrder": 5, "displayHint": "Metrics Uri"}
+	]
+  },
+  "properties": [
+	{
+		"key": "user",
+		"type": "String",
+		"defaultValue": "",
+		"displayOrder": 1
+	},
+	{
+		"key": "password",
+		"type": "Password",
+		"defaultValue": "",
+		"displayOrder": 2
+	},
+	{
+		"key": "domain",
+		"type": "String",
+		"defaultValue": "localhost",
+		"displayOrder": 3
+	},
+	{
+		"key": "port",
+		"type": "String",
+		"defaultValue": "80",
+		"displayOrder": 4
+	},
+	{
+		"key": "uri",
+		"type": "String",
+		"defaultValue": "/metrics/snapshot",
+		"displayOrder": 5
+	}
+  ]
 }

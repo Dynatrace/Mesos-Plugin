@@ -6,10 +6,17 @@ from ruxit.api.snapshot import pgi_name
 
 class DemoPlugin(BasePlugin):
     def query(self, **kwargs):
+        config = kwargs["config"]
+        user = config["user"]
+        password = config["password"]
+        domain = config["domain"]
+        port = config["port"]
+        uri = config["uri"]
+        
         pgi = self.find_single_process_group(pgi_name('mesosphere.marathon.Main'))
         pgi_id = pgi.group_instance_id
-        stats_url = "http://localhost/mesos/metrics/snapshot"
-        stats = json.loads(requests.get(stats_url).content.decode())
+        stats_url = ("http://"+domain+":"+port+uri)
+        stats = json.loads(requests.get(stats_url, auth=(user, password)).content.decode())
 		
 		#CPU Related Metrics
         self.results_builder.absolute(key='cpus_used', value=stats['master/cpus_used'], entity_id=pgi_id)
