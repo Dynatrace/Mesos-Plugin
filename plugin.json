@@ -41,7 +41,7 @@
 		"displayname": "Master CPUs Used"
       },
 	  "source": {
-		"stat": "master/cpus_percent"
+		"stat": "master/cpus_used"
 	  },
 	  "alert_settings": [
 			{
