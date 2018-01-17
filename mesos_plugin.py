@@ -16,11 +16,11 @@ class DemoPlugin(BasePlugin):
         domain = config["domain"]
         port = config["port"]
         uri = config["uri"]
-        
+
         pgi = self.find_single_process_group(pgi_name('mesosphere.marathon.Main'))
         pgi_id = pgi.group_instance_id
         stats_url = ("http://"+domain+":"+port+uri)
-        #stats_url = ("http://64.15.185.89:9000/metrics/snapshot")
+        #stats_url = ("http://demo1693188.mockable.io/")
         stats = json.loads(requests.get(stats_url, auth=(user, password)).content.decode())
 
         for metric in self.metrics:
