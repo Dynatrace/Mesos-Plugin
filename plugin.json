@@ -3,7 +3,7 @@
   "version": "1.1",
   "type": "python",
   "entity": "PROCESS_GROUP_INSTANCE",
-  "processTypeNames": ["JAVA"],
+  "processTypeNames": ["JAVA", "UNKNOWN"],
   "source": {
     "package": "mesos_plugin",
     "className": "DemoPlugin",

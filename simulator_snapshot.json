@@ -11,6 +11,18 @@
           }
         }
       ]
+    },
+    {
+      "process_type": 0,
+      "group_name": "mesos-master",
+      "processes": [
+        {
+          "process_name":"other",
+          "properties": {
+            "ListeningPorts": "5050"
+          }
+        }
+      ]
     }
   ]
 }
