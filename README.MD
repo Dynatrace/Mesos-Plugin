@@ -14,4 +14,4 @@
 * Configure the user credentials, server, port and Mesos API URI.  By default the plugin with attempt to connect to the Mesos API using the following: ```http://localhost:80/metrics/snapshot```
 * Click on the button ```Upgrade Now```
 
-Within a couple of minutes you should find additional metrics getting reported for a process called ```mesosphere.marathon.Main``` for the host you have deployed the plugin on.
+Within a couple of minutes you should find additional metrics getting reported for a process called ```mesosphere.marathon.Main``` or ```mesos-master``` for the host you have deployed the plugin on.
